@@ -1,0 +1,44 @@
+body {
+    font-family:'Times New Roman', Times, Serif;
+    display:flex;
+    flex-wrap:wrap;
+    background-color: rgb(151, 255, 255);
+}
+
+div#first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 1px 1px 5px;
+    min-width: 200px;
+    width: 758px;
+}
+
+
+div#first {
+    align-items: flex-start;
+    justify-content: center;
+    width: 1500px;
+    height: 750px;
+    min-width: 200px;
+    padding: 10px 15px 10px 15px;
+    margin: 1px;
+}
+
+div#nGSubmit {
+    background-color: cyan;
+    align-items: center;
+    width: 1500px;
+    height: 200px;
+    min-width: 200px;
+    padding: 10px 15px 10px 15px;
+    margin: 1px;
+}
+
+.nGSubmit {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 1px 1px 5px;
+}
+
