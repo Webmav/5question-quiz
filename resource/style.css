@@ -5,27 +5,18 @@ body {
     background-color: rgb(151, 255, 255);
 }
 
+
 div#first {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 1px 1px 5px;
-    min-width: 200px;
-    width: 758px;
-}
-
-
-div#first {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
     height: 750px;
     min-width: 200px;
     padding: 10px 15px 10px 15px;
-    margin: 1px;
+    margin: 5px 1px 1px 5px;
 }
-
-div#nGSubmit {
+div#nGSubmitDiv {
     background-color: cyan;
     align-items: center;
     width: 1500px;
@@ -34,7 +25,6 @@ div#nGSubmit {
     padding: 10px 15px 10px 15px;
     margin: 1px;
 }
-
 .nGSubmit {
     display:flex;
     justify-content: center;
@@ -42,3 +32,55 @@ div#nGSubmit {
     margin: 5px 1px 1px 5px;
 }
 
+
+div#second {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1500px;
+    height: 750px;
+    min-width: 235px;
+    padding: 10px 15px 10px 15px;
+    margin: 5px 1px 1px 5px;
+}
+div#qOneDiv {
+    background-color: rgb(0, 235, 235);
+    align-items: center;
+    width: 1500px;
+    height: 200px;
+    min-width: 200px;
+    padding: 10px 15px 10px 15px;
+    margin: 1px;
+}
+.qOne {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 1px 1px 5px;
+}
+
+div#third {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1500px;
+    height: 750px;
+    min-width: 235px;
+    padding: 10px 15px 10px 15px;
+    margin: 5px 1px 1px 5px;
+}
+div#qTwoDiv {
+    background-color: rgb(0, 235, 235);
+    align-items: center;
+    width: 1500px;
+    height: 200px;
+    min-width: 200px;
+    padding: 10px 15px 10px 15px;
+    margin: 1px;
+}
+.qTwo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 1px 1px 5px;
+}
