@@ -6,7 +6,7 @@ body {
 }
 
 
-div#first {
+div#details {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -33,7 +33,7 @@ div#nGSubmitDiv {
 }
 
 
-div#second {
+div#first {
     display:flex;
     align-items: flex-start;
     justify-content: center;
@@ -60,7 +60,7 @@ div#qOneDiv {
 }
 
 
-div#third {
+div#second {
     display:flex;
     align-items: flex-start;
     justify-content: center;
@@ -87,7 +87,7 @@ div#qTwoDiv {
 }
 
 
-div#fourth {
+div#third {
     display:flex;
     align-items: flex-start;
     justify-content: center;
@@ -114,7 +114,7 @@ div#qThreeDiv {
 }
 
 
-div#fifth {
+div#fourth {
     display:flex;
     align-items: flex-start;
     justify-content: center;
@@ -141,7 +141,7 @@ div#qFourDiv {
 }
 
 
-div#sixth {
+div#fifth {
     display:flex;
     align-items: flex-start;
     justify-content: center;
@@ -161,6 +161,33 @@ div#qFiveDiv {
     margin: 1px;
 }
 .qFive {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 1px 1px 5px;
+}
+
+
+div#score {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1500px;
+    height: 750px;
+    min-width: 235px;
+    padding: 10px 15px 10px 15px;
+    margin: 5px 1px 1px 5px;
+}
+div#scoreDiv {
+    background-color: rgb(0, 235, 235);
+    align-items: center;
+    width: 1500px;
+    height: 200px;
+    min-width: 200px;
+    padding: 10px 15px 10px 15px;
+    margin: 1px;
+}
+.score {
     display:flex;
     justify-content: center;
     align-items: center;
