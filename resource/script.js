@@ -2,6 +2,7 @@
 const inputName = document.querySelector("#nGSubmitName");
 const inputGmail = document.querySelector("#nGSubmitGmail");
 const startButton = document.querySelector("#startButton");
+const nextButtons = document.querySelector('.next');
 
 const firstDiv = document.querySelector('#first');
 const secondDiv = document.querySelector('#second');
@@ -40,5 +41,11 @@ startButton.addEventListener('click',()=>{
     }
     else if(math<=100){
         sixthDiv.style.display = "";
+    }
+})
+
+nextButtons.forEach((button)=>{
+    button.addEventListener(){
+        
     }
 })
