@@ -50,6 +50,12 @@ startButton.addEventListener('click',()=>{
     if((name1 == "") || (gmail1 == "")){
         alert("Fill in all the details");
     }
+    else if (/\d/.test(name1)){
+        alert("Name CANNOT contain numbers");
+    }
+    else if (!gmail1.endsWith("@gmail.com")){
+        alert("Enter a valid email");
+    }
     else {
         details.style.display = "none";
 
@@ -131,8 +137,6 @@ nextButtons.forEach((button)=>{
 
 //remaining
 
-//accept real name
-//accept real gmail
 //View answers (right or wrong)
 
 document.addEventListener('keypress',(event)=>{
