@@ -2,7 +2,6 @@
 const inputName = document.querySelector("#nGSubmitName");
 const inputGmail = document.querySelector("#nGSubmitGmail");
 const startButton = document.querySelector("#startButton");
-const nextButtons = document.querySelector('.next');
 
 const firstDiv = document.querySelector('#first');
 const secondDiv = document.querySelector('#second');
@@ -13,12 +12,14 @@ const sixthDiv = document.querySelector("#sixth");
 
 let name1;
 let gmail1;
+let maths;
 
 secondDiv.style.display = "none";
 thirdDiv.style.display = "none";
 fourthDiv.style.display = "none";
 fifthDiv.style.display = "none";
 sixthDiv.style.display = "none";
+
 
 startButton.addEventListener('click',()=>{
     name1 = inputName.value;
@@ -27,6 +28,7 @@ startButton.addEventListener('click',()=>{
     firstDiv.style.display = "none";
 
     let math = Math.floor(Math.random() * 100);
+    maths = math;
     if(math<=20){
         secondDiv.style.display = "";
     }
@@ -42,10 +44,5 @@ startButton.addEventListener('click',()=>{
     else if(math<=100){
         sixthDiv.style.display = "";
     }
-})
-
-nextButtons.forEach((button)=>{
-    button.addEventListener(){
-        
-    }
+    console.log(maths); 
 })
