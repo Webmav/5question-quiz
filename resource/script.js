@@ -133,7 +133,6 @@ nextButtons.forEach((button)=>{
 
 //accept real name
 //accept real gmail
-//make footer
 //View answers (right or wrong)
 
 document.addEventListener('keypress',(event)=>{

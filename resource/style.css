@@ -1,8 +1,19 @@
 body {
     font-family:'Times New Roman', Times, Serif;
     display:flex;
-    flex-wrap:wrap;
     background-color: rgb(151, 255, 255);
+    margin:0px;
+    flex-flow: row wrap;
+}
+#footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 1500px;
+    height: 69px;
+    min-height: 69px;
+    min-width: 250px;
+    background-color:rgb(27, 27, 27);
 }
 
 
@@ -11,10 +22,8 @@ div#details {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
-    height: 750px;
-    min-width: 200px;
-    padding: 10px 15px 10px 15px;
-    margin: 5px 1px 1px 5px;
+    height: 650px;
+    min-width: 250px;
 }
 div#nGSubmitDiv {
     background-color: cyan;
@@ -38,7 +47,7 @@ div#first {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
-    height: 750px;
+    height: 650px;
     min-width: 235px;
     padding: 10px 15px 10px 15px;
     margin: 5px 1px 1px 5px;
@@ -65,7 +74,7 @@ div#second {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
-    height: 750px;
+    height: 650px;
     min-width: 235px;
     padding: 10px 15px 10px 15px;
     margin: 5px 1px 1px 5px;
@@ -92,7 +101,7 @@ div#third {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
-    height: 750px;
+    height: 650px;
     min-width: 235px;
     padding: 10px 15px 10px 15px;
     margin: 5px 1px 1px 5px;
@@ -119,7 +128,7 @@ div#fourth {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
-    height: 750px;
+    height: 650px;
     min-width: 235px;
     padding: 10px 15px 10px 15px;
     margin: 5px 1px 1px 5px;
@@ -146,7 +155,7 @@ div#fifth {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
-    height: 750px;
+    height: 650px;
     min-width: 235px;
     padding: 10px 15px 10px 15px;
     margin: 5px 1px 1px 5px;
@@ -173,7 +182,7 @@ div#score {
     align-items: flex-start;
     justify-content: center;
     width: 1500px;
-    height: 750px;
+    height: 650px;
     min-width: 235px;
     padding: 10px 15px 10px 15px;
     margin: 5px 1px 1px 5px;
@@ -193,3 +202,5 @@ div#scoreDiv {
     align-items: center;
     margin: 5px 1px 1px 5px;
 }
+
+
