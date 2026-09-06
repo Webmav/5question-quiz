@@ -4,20 +4,12 @@ const inputGmail = document.querySelector("#nGSubmitGmail");
 const startButton = document.querySelector("#startButton");
 const nextButtons = document.querySelectorAll(".next");
  
-const details = document.querySelector('#details');
-const first = document.querySelector('#first');
-const second = document.querySelector("#second");
-const third = document.querySelector("#third");
-const fourth = document.querySelector("#fourth");
-const fifth = document.querySelector("#fifth");
-const score = document.querySelector("#score");
-
-const qFirst = document.querySelector("#qCapital");
-const qSecond = document.querySelector("#qArabian");
-const qThird = document.querySelector("#qHimalayan");
-const qFourth = document.querySelector("#qEmerald");
-const qFifth = document.querySelector("#qLeap");
-const scoress = document.querySelector("#scoress");
+const firstDiv = document.querySelector('#first');
+const secondDiv = document.querySelector('#second');
+const thirdDiv = document.querySelector("#third");
+const fourthDiv = document.querySelector("#fourth");
+const fifthDiv = document.querySelector("#fifth");
+const sixthDiv = document.querySelector("#sixth");
 
 let name1;
 let gmail1;
@@ -66,172 +58,101 @@ startButton.addEventListener('click',()=>{
 
 nextButtons.forEach((button)=>{
     button.addEventListener('click',()=>{
-        if((ans1 == "") || (ans1 == undefined)){
-            ans1 = qFirst.value ;
-            if(ans1 == ""){
-                alert("Enter ANSWER!!!")
+        if(maths<=20){
+            secondDiv.style.display = "none";
+            
+            let math = Math.floor(Math.random() * 100);
+            maths = math;
+            if(math<=40){
+                thirdDiv.style.display = "";
             }
-            else{
-                first.remove();
-                second.style.display = '';
-                    if((ans1 == "delhi") || (ans1 == "Delhi")){
-                        scores += 20;
-                    }
+            else if(math<=60){
+                fourthDiv.style.display = "";
             }
-        }
-        else if((ans2 == "") || (ans2 == undefined)){
-            ans2 = qSecond.value ;
-            if(ans2 == ""){
-                alert("Enter ANSWER!!!")
+            else if(math<=80){
+                fifthDiv.style.display = "";
             }
-            else{
-                second.remove();
-                third.style.display = '';
-                    if((ans2 == "jupiter") || (ans2 == "Jupiter")){
-                        scores += 20;
-                    }
+            else if(math<=100){
+                sixthDiv.style.display = "";
             }
         }
-        else if((ans3 == "") || (ans3 == undefined)){
-            ans3 = qThird.value ;
-            if(ans3 == ""){
-                alert("Enter ANSWER!!!")
+        else if(maths<=40){
+            thirdDiv.style.display = "none";
+
+            let math = Math.floor(Math.random() * 100);
+            maths = math;
+            if(math<=20){
+                secondDiv.style.display = "";
             }
-            else{
-                third.remove();
-                fourth.style.display = '';
-                    if((ans3 == "paris") || (ans3 == "Paris")){
-                        scores += 20;
-                    }
+            else if(math<=60){
+                fourthDiv.style.display = "";
             }
-        }
-        else if((ans4 == "") || (ans4 == undefined)){
-            ans4 = qFourth.value ;
-            if(ans4 == ""){
-                alert("Enter ANSWER!!!")
+            else if(math<=80){
+                fifthDiv.style.display = "";
             }
-            else{
-                fourth.remove();
-                fifth.style.display = '';
-                    if((ans4 == "green") || (ans4 == "Green")){
-                        scores += 20;
-                    }
+            else if(math<=100){
+                sixthDiv.style.display = "";
             }
         }
-        else if((ans5 == "") || (ans5 == undefined)){
-            ans5 = qFifth.value ;
-            if(ans5 == ""){
-                alert("Enter ANSWER!!!")
+        else if(maths<=60){
+            fourthDiv.style.display = "none";
+
+            let math = Math.floor(Math.random() * 100);
+            maths = math;
+            if(math<=20){
+                secondDiv.style.display = "";
             }
-            else{
-                fifth.remove();
-                score.style.display = '';
-                    if(ans5 == "366"){
-                        scores += 20;
-                    }
-                scoress.textContent = `${scores} / 100`;
+            else if(math<=40){
+                thirdDiv.style.display = "";
+            }
+            else if(math<=80){
+                fifthDiv.style.display = "";
+            }
+            else if(math<=100){
+                sixthDiv.style.display = "";
+            }
+        }
+        else if(maths<=80){
+            fifthDiv.style.display = "none";
+
+            let math = Math.floor(Math.random() * 100);
+            maths = math;
+            if(math<=20){
+                secondDiv.style.display = "";
+            }
+            else if(math<=40){
+                thirdDiv.style.display = "";
+            }
+            else if(math<=60){
+                fourthDiv.style.display = "";
+            }
+            else if(math<=100){
+                sixthDiv.style.display = "";
+            }
+        }
+        else if(maths<=100){
+            fifthDiv.style.display = "none";
+
+            let math = Math.floor(Math.random() * 100);
+            maths = math;
+            if(math<=20){
+                secondDiv.style.display = "";
+            }
+            else if(math<=40){
+                thirdDiv.style.display = "";
+            }
+            else if(math<=60){
+                fourthDiv.style.display = "";
+            }
+            else if(math<=80){
+                fifthDiv.style.display = "";
             }
         }
     })
 })
 
-//remaining
-
-//View answers (right or wrong)
-
-document.addEventListener('keypress',(event)=>{
-    key = event.key;
-    if(key == 'Enter'){
-        console.log(key);
-//details page
-        if(details.style.display == ""){
-            name1 = inputName.value;
-            gmail1 = inputGmail.value;
-
-            if((name1 == "") || (gmail1 == "")){
-                alert("Fill in all the details");
-            }
-            else {
-                details.style.display = "none";
-
-                first.style.display = "";
-            }
-        }
-//other pages
-        else {
-            if((ans1 == "") || (ans1 == undefined)){
-                ans1 = qFirst.value ;
-                if(ans1 == ""){
-                    alert("Enter ANSWER!!!")
-                }
-                else{
-                    first.remove();
-                    second.style.display = '';
-                        if((ans1 == "delhi") || (ans1 == "Delhi")){
-                            scores += 20;
-                        }
-                }
-            }
-            else if((ans2 == "") || (ans2 == undefined)){
-                ans2 = qSecond.value ;
-                if(ans2 == ""){
-                    alert("Enter ANSWER!!!")
-                }
-                else{
-                    second.remove();
-                    third.style.display = '';
-                        if((ans2 == "jupiter") || (ans2 == "Jupiter")){
-                            scores += 20;
-                        }
-                }
-            }
-            else if((ans3 == "") || (ans3 == undefined)){
-                ans3 = qThird.value ;
-                if(ans3 == ""){
-                    alert("Enter ANSWER!!!")
-                }
-                else{
-                    third.remove();
-                    fourth.style.display = '';
-                        if((ans3 == "paris") || (ans3 == "Paris")){
-                            scores += 20;
-                        }
-                }
-            }
-            else if((ans4 == "") || (ans4 == undefined)){
-                ans4 = qFourth.value ;
-                if(ans4 == ""){
-                    alert("Enter ANSWER!!!")
-                }
-                else{
-                    fourth.remove();
-                    fifth.style.display = '';
-                        if((ans4 == "green") || (ans4 == "Green")){
-                            scores += 20;
-                        }
-                }
-            }
-            else if((ans5 == "") || (ans5 == undefined)){
-                ans5 = qFifth.value ;
-                if(ans5 == ""){
-                    alert("Enter ANSWER!!!")
-                }
-                else{
-                    fifth.remove();
-                    score.style.display = '';
-                        if(ans5 == "366"){
-                            scores += 20;
-                        }
-                    scoress.textContent = `${scores} / 100`;
-                }
-            }
-        }
-    //score page
-        if(ul.style.display == "none"){
-            ul.style.display = "";
-        }
-        else if(ul.style.display == ""){
-            ul.style.display = "none";
-        }
-    }
-})
+//rem
+//click enter for next or button
+//accept real name
+//accept real gmail
+//make footer
