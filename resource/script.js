@@ -226,5 +226,12 @@ document.addEventListener('keypress',(event)=>{
                 }
             }
         }
+    //score page
+        if(ul.style.display == "none"){
+            ul.style.display = "";
+        }
+        else if(ul.style.display == ""){
+            ul.style.display = "none";
+        }
     }
 })
